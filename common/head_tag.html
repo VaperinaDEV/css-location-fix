@@ -1,0 +1,7 @@
+<script type="text/discourse-plugin" version="0.8">
+api.onPageChange((url) => {
+if (url == "/u/user-map?period=location" ){
+    $("body") .addClass("bannermap");
+    $('.nav-pills').append('<li><a href="/my/preferences/profile">Beállítás</a></li>');    
+}});
+</script>
