@@ -1,3 +1,12 @@
+@mixin location-label {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 // Location Map
 
 .composer-controls-location {
@@ -52,17 +61,16 @@ div.input-location,
 .location-details {
   .location-label-container {
     align-items: baseline;
-    .location-label,
     .location-label {
-      display: -webkit-box;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      word-wrap: break-word;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
+      @include location-label;
     }
   }
 }
+
+.location-and-website .location-label {
+  @include location-label;
+}
+
 .map-container.small {
   margin-top: 5px;
 }
