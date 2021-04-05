@@ -41,3 +41,8 @@ div.input-location,
     max-width: calc(100vw - 20px);
   }
 }
+
+.locations-map .btn-map {
+  width: 26px !important;
+  min-width: auto !important;
+}
