@@ -1,0 +1,43 @@
+// Location Map
+
+.composer-controls-location {
+  .btn {
+    &:not(:hover) {
+      background: var(--secondary-very-high);
+    }
+    &:hover {
+      background: var(--secondary-medium);
+    }
+    svg {
+      color: var(--secondary-low);
+    }
+  }
+}
+
+#reply-control {
+  .add-location-btn.no-text {
+    &:not(.btn-primary) {
+      background: var(--secondary-very-high);
+    }
+  }
+}
+
+input.input-location,
+div.input-location,
+.location-form-result {
+  background-color: var(--secondary);
+}
+
+.location-results {
+  ul {
+    background-color: var(--secondary);
+  }
+}
+
+#list-area {
+  .map-component {
+    display: block;
+    width: 600px;
+    max-width: calc(100vw - 20px);
+  }
+}
