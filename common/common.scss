@@ -1,4 +1,4 @@
-@mixin location-label {
+@mixin location-label() {
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
